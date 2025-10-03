@@ -14,7 +14,7 @@ function Register() {
 
   const handleChange = (e) => {
   const { name, value } = e.target;
-    console.log(name, value);
+
     const copyRegisterInfo = {...registerInfo};
     copyRegisterInfo[name] = value;
     setRegisterInfo(copyRegisterInfo);
@@ -48,7 +48,7 @@ try {
   } else if (!success) {
     handleError(message);
   }
-  console.log(result);
+
   
 } catch (err) {
   handleError(err.message || "Something went wrong");
